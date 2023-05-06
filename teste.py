@@ -1,2 +1,0 @@
-print(f"hello world")
-
