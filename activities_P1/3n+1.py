@@ -1,5 +1,7 @@
 while True:
-    n1,n2 = map(int,input().split(" "))
+    n1,n2 = input().split(" ")
+    n1 = int(n1)
+    n2 = int(n2)
     maior_ciclo = 0
     for numero in range(n1+1,n2):
         n = numero
