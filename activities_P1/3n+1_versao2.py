@@ -14,7 +14,7 @@ while True:
     numero = n1  # a variável número, vai ficar atualizando pra cada rodada do bloco, no caso do exemplo que eu falei, 
     # é como se ele fosse o numero 2 e depois virasse o 3 e assim por diante.
 
-    while numero < n2:
+    while numero <= n2:
         ciclo = 1 #ciclo está valendo 1, porque ele já está contando com o numero 1.
 
         while numero != 1:
