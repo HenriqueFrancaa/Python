@@ -8,3 +8,5 @@ while soma + livro <= peso:
     livro = int(input())
     
 print(quantidade)
+
+#questao feita durante a aula :)
