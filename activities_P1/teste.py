@@ -10,46 +10,25 @@ while True:
 
         maior_ciclo = 0
         i = 1
-        
-        if n1 > n2:
-            numero = n2
-            maior = n1
-            while numero <= maior:
-                ciclo = 1 
+        menor_numero = n1 
 
-                while numero != 1:
-                    if numero%2 == 0:
-                        ciclo+=1
-                        numero = numero//2
+        maior_numero = (n1 + n2 + abs(n1 - n2)) / 2
+        menor_numero = (n1 + n2 - abs(n1 - n2)) / 2
 
-                    elif numero%2 != 0:
-                        ciclo+=1
-                        numero = numero*3 + 1
+        while menor_numero <= maior_numero:
+            ciclo = 1 
 
-            numero = n1 + i
-            i-=1
+            while menor_numero != 1:
+                if menor_numero%2 == 0:
+                    ciclo+=1
+                    menor_numero = menor_numero//2
 
-            if ciclo > maior_ciclo:
-                maior_ciclo = ciclo
-        
-        elif n2 > n1:
-            numero = n1
-            maior = n2
+                elif menor_numero%2 != 0:
+                    ciclo+=1
+                    menor_numero = menor_numero*3 + 1
 
-            while numero <= maior:
-                ciclo = 1 
-
-                while numero != 1:
-                    if numero%2 == 0:
-                        ciclo+=1
-                        numero = numero//2
-
-                    elif numero%2 != 0:
-                        ciclo+=1
-                        numero = numero*3 + 1
-
-                numero = n1 + i
-                i+=1
+            menor_numero = n1 + i
+            i+=1
 
             if ciclo > maior_ciclo:
                 maior_ciclo = ciclo  
