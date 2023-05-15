@@ -10,7 +10,7 @@ while True:
 
         maior_ciclo = 0
         i = 1
-        menor_numero = n1 
+         
 
         maior_numero = (n1 + n2 + abs(n1 - n2)) / 2
         menor_numero = (n1 + n2 - abs(n1 - n2)) / 2
@@ -20,13 +20,11 @@ while True:
 
             while menor_numero != 1:
                 if menor_numero%2 == 0:
-                    ciclo+=1
                     menor_numero = menor_numero//2
-
-                elif menor_numero%2 != 0:
-                    ciclo+=1
+                else:
                     menor_numero = menor_numero*3 + 1
 
+                ciclo+=1
             menor_numero = n1 + i
             i+=1
 
