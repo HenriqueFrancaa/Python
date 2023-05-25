@@ -13,7 +13,7 @@ elif x > 1:
         i += 1
     print(b)
 
-elif x == 0:
+elif x == 0 or b == 1:
     print('1')
 
 elif x < 0:
