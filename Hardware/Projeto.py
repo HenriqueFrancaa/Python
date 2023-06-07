@@ -1,15 +1,16 @@
 import RPi.GPIO as gpio
 import time
 
-led1 = 17
-led2 = 27
-led3 = 22
-led4 = 9
-led5 = 10
-led6 = 11
+#Pinos das leds
+led1 = 26
+led2 = 10
+led3 = 17
+led4 = 19
+led5 = 9
+led6 = 27
 led7 = 13
-led8 = 19
-led9 = 26
+led8 = 11
+led9 = 23
  
 gpio.setmode(gpio.BCM)
 gpio.setup(led1,gpio.OUT)
@@ -22,9 +23,9 @@ gpio.setup(led7,gpio.OUT)
 gpio.setup(led8,gpio.OUT)
 gpio.setup(led9,gpio.OUT)
 
-#Botoes
-#gpio.setup({entrada BCM},gpio.IN,pull_up_down=gpio.PUD_DOWN)
-#gpio.setup({entrada BCM},gpio.IN,pull_up_down=gpio.PUD_DOWN)
+#Botoes com entrada BCM
+gpio.setup(4,gpio.IN,pull_up_down=gpio.PUD_DOWN)
+gpio.setup(14,gpio.IN,pull_up_down=gpio.PUD_DOWN)
 
     #COMBINAÇÂO 1
 def sequencia3():
@@ -524,16 +525,16 @@ def sequencia24():
     gpio.output(led9,gpio.LOW)
     time.sleep(1)
 
-#while True:
+while True:
     #Combinação1
-    #if gpio.input({entrada BCM}) == gpio.HIGH and gpio.input({entrada BCM}) == gpio.LOW:
-        #sequencia3();sequencia7();sequencia11();sequencia15();sequencia19();sequencia23()
+    if gpio.input(4) == gpio.HIGH and gpio.input(14) == gpio.LOW:
+        sequencia3();sequencia7();sequencia11();sequencia15();sequencia19();sequencia23()
 
     #Combinação2
-    #if gpio.input({entrada BCM}) == gpio.LOW and gpio.input({entrada BCM}) == gpio.HIGH:
-        #sequencia1();sequencia5();sequencia9();sequencia13();sequencia17();sequencia21()
+    if gpio.input(4) == gpio.LOW and gpio.input(14) == gpio.HIGH:
+        sequencia1();sequencia5();sequencia9();sequencia13();sequencia17();sequencia21()
 
     #Combinação3
-    #if gpio.input({entrada BCM}) == gpio.HIGH and gpio.input({entrada BCM}) == gpio.HIGH:
-        #sequencia4();sequencia8();sequencia12();sequencia20();sequencia24()
+    if gpio.input(4) == gpio.HIGH and gpio.input(14) == gpio.HIGH:
+        sequencia4();sequencia8();sequencia12();sequencia20();sequencia24()
     
