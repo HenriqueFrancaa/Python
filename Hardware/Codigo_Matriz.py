@@ -65,6 +65,9 @@ def sequencia3():
     ON(led7)
     time.sleep(1)
     OFF(led7)
+    time.sleep(1)
+    OFF(led3)
+
 
 def sequencia7():
     ON(led7)
