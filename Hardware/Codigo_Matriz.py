@@ -66,7 +66,6 @@ def sequencia3():
     time.sleep(1)
     OFF(led7)
     time.sleep(1)
-    OFF(led3)
 
 
 def sequencia7():
@@ -93,6 +92,8 @@ def sequencia7():
     OFF(led6)
     OFF(led2)
     OFF(led3)
+    time.sleep(1)
+
 
 def sequencia11():
     ON(led3)
@@ -118,6 +119,8 @@ def sequencia11():
     OFF(led8)
     OFF(led4)
     OFF(led7)
+    time.sleep(1)
+
 
 def sequencia15():
     ON(led1)
@@ -143,6 +146,8 @@ def sequencia15():
     OFF(led4)
     OFF(led8)
     OFF(led7)
+    time.sleep(1)
+
 
 def sequencia19():
     ON(led5)
@@ -178,6 +183,7 @@ def sequencia19():
     OFF(led7)
     time.sleep(1)
     OFF(led5)
+    time.sleep(1)
 
 def sequencia23():
     ON(led1)
@@ -203,6 +209,7 @@ def sequencia23():
     time.sleep(1)
     OFF(led3)
     OFF(led7)
+    time.sleep(1)
 
 #COMBINAÇÂO 2
 def sequencia1():
@@ -233,6 +240,7 @@ def sequencia1():
     ON(led9)
     time.sleep(1)
     OFF(led9)
+    time.sleep(1)
 
 def sequencia5():
     ON(led5)
