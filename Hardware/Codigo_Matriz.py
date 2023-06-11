@@ -89,6 +89,7 @@ def sequencia7():
     OFF(led1)
     OFF(led6)
     OFF(led2)
+    OFF(led3)
 
 def sequencia11():
     ON(led3)
